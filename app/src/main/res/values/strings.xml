@@ -1,0 +1,5 @@
+<resources>
+    <string name="hello_world">salut</string>
+    <string name="app_name">Programation mobile</string>
+    <string name="button_text">Click</string>
+</resources>
