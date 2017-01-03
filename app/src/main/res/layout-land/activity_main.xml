@@ -1,22 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/fond"
+    >
 
 
 
-<TextView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello_world"
+        android:id="@+id/tv_hello_world"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"  />
 
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="BONJOUR!"
-android:gravity="center" />
+    <Button
+        android:text="Click"
+        android:name="btn_services"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_services"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
 
-<Button
 
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="BONJOUR!"
-android:gravity="center" />
+        android:layout_below="@+id/tv_hello_world"
+        android:layout_width="167dp" />
+
+    <Button
+        android:text="seconde activity"
+        android:name="activity_seconde"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
+
+        android:layout_below="@+id/tv_hello_world"
+        android:id="@+id/activity_seconde" />
+
+    <Button
+        android:text="GetBiersServices"
+        android:name="GetBiersServices"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/GetBiersServices"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+
+        android:layout_below="@+id/tv_hello_world"
+        android:layout_marginTop="28dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:id="@+id/rv_biere"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hello_world"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
+       />
 
 </LinearLayout>

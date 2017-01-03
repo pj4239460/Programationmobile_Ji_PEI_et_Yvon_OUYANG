@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background = "@drawable/fond"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,18 +24,19 @@
 
     <Button
         android:text="Click"
+        android:name="btn_services"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_services"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="29dp"
-        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Button"
+        android:text="seconde activity"
+        android:name="activity_seconde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/btn_services"
@@ -42,14 +44,20 @@
         android:id="@+id/activity_seconde" />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/rv_biere"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_below="@+id/tv_hello_world"
-        android:layout_toEndOf="@+id/activity_seconde" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        />
 
     <Button
-        android:text="Button"
+        android:text="GetBiersServices"
+        android:name="GetBiersServices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/GetBiersServices"

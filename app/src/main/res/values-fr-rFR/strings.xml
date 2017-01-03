@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="button_text">Clique</string>
+    <string name="hello_world">SALUT</string>
+    <string name="app_name">Programation mobile</string>
+    <string name="btn_services">Clique</string>
+    <string name="activity_seconde">activity seconde</string>
+    <string name="GetBiersServices">Telechargement</string>
 
 </resources>

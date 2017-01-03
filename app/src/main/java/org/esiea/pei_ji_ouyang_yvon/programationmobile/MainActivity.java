@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-
+    private BiersAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         rv=(RecyclerView) findViewById(R.id.rv_biere);
 
         rv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        rv.setAdapter(mAdapter);
 
         final TextView tv_hw = (TextView) findViewById(R.id.tv_hello_world);
         Button btn_hw = (Button) findViewById(R.id.btn_services);
@@ -122,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
         IntentFilter intentFilter = new IntentFilter(BIERS_UPDATE);
         LocalBroadcastManager.getInstance(this).registerReceiver(new BierUpdate(),intentFilter);
+
+
     }
 
     public void Notification() {
